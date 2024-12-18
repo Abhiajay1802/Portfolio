@@ -1,0 +1,61 @@
+/* Mobile and Tablet Responsiveness */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        position: relative;
+    }
+
+    .nav-menu {
+        display: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-menu.active {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-menu li {
+        margin: 10px 0;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image img {
+        max-width: 250px;
+        max-height: 250px;
+        margin-bottom: 20px;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-info {
+        flex-direction: column;
+    }
+
+    .contact-details, .contact-form {
+        width: 100%;
+    }
+}
+
+/* Large Screen Adjustments */
+@media screen and (min-width: 769px) {
+    .contact-info {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .contact-details {
+        width: 40%;
+    }
+
+    .contact-form {
+        width: 55%;
+    }
+}
